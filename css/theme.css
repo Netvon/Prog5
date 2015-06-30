@@ -37,6 +37,10 @@ body{
 	font-size:28px;
 }
 
+.content article .header .glyphicon{
+	float:right;
+}
+
 .content  article  .main {
 	padding-top:15px;
 	padding-bottom:15px;
@@ -77,8 +81,39 @@ body{
 	margin-right: auto;
 }
 
+.header .glyphicon{
+	margin-top:-6px;
+}
+
+.easy .header{
+	border-bottom:2px solid green !important;
+}
+
+.easy .header .glyphicon{
+	color:green !important;
+}
+
+
+.medium .header{
+	border-bottom:2px solid gold !important;
+}
+
+.medium .header .glyphicon{
+	color:gold !important;
+}
+
+
+.hard .header{
+	border-bottom:2px solid red !important;
+}
+
+.hard .header .glyphicon{
+	color:red !important;
+}
+
 @media all and (min-width: 992px) {
 	 .sideNav{
 		display:block;
 	}
 }
+
