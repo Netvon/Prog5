@@ -1,0 +1,44 @@
+<div class="row" ng-controller="profileCtrl">
+
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		
+		<section class="preHeader">
+		<h2>{{user.name}}</h2>
+		</section>
+		
+		<article class="sample shadow-z-1">
+			<section class="header">
+				<span>Basic Information</span>
+			</section>
+			
+			<section class="main">
+				<div class="row">
+					<div class="col-md-6">
+		
+							<label>Email</label></br>
+							<span>{{user._id}}</span></br>
+				
+
+						<label>Role</label></br>
+						<span ng-show="user.isTeacher">Teacher</span>
+						<span ng-show="!user.isTeacher">Student</span>
+					</div>
+					
+					<div class="col-md-6">
+						<label>Points</label></br>
+						<span class="points">{{user.points}}</span>
+					</div>
+				</div>
+			</section>
+			
+			<section class="footer">
+				
+				
+			</section>
+		
+		</article>
+		
+	</div>
+	<div class="col-md-3"></div>
+</div>
