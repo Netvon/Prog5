@@ -2,7 +2,9 @@ body{
 	background-color:white;
 }
 
-
+a:hover{
+	cursor: pointer;
+}
 
 .content .article-container{
 	padding:0px;
@@ -85,6 +87,18 @@ body{
 	margin-top:-6px;
 }
 
+span.easy{
+	color: green ;
+}
+
+span.medium{
+	color: gold;
+}
+
+span.hard{
+	color:darkred;
+}
+
 .easy .header{
 	border-bottom:2px solid green !important;
 }
@@ -104,11 +118,11 @@ body{
 
 
 .hard .header{
-	border-bottom:2px solid red !important;
+	border-bottom:2px solid darkred !important;
 }
 
 .hard .header .glyphicon{
-	color:red !important;
+	color:darkred !important;
 }
 
 @media all and (min-width: 992px) {

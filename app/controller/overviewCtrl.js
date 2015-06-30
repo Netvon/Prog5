@@ -2,7 +2,8 @@ module.exports = function($scope){
 	var self = $scope;
 	
 	$(window).on('scroll', function(data, two){
-		$('#overview').css('margin-top', -45 + $(this).scrollTop() + "px");
+		console.log($(this).scrollTop());
+		$('#overview').css('top',  $(this).scrollTop() + "px");
 	});
 	
 	self.scrollTo = function(elementId){
