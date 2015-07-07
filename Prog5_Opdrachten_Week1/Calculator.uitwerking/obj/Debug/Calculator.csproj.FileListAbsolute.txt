@@ -1,0 +1,5 @@
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.uitwerking\bin\Debug\Calculator.exe.config
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.uitwerking\bin\Debug\Calculator.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.uitwerking\bin\Debug\Calculator.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.uitwerking\obj\Debug\Calculator.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.uitwerking\obj\Debug\Calculator.pdb

@@ -1,6 +1,7 @@
 
 var routesConfig = require('./config/routes');
-var overviewCtrl = require("./controller/overviewCtrl");
+var overviewCtrl = require("./controllers/overviewCtrl");
+var twentytwenty = require('./directives/twentytwenty');
 
 var app = angular.module('Prog5', ["PointyPony"]);
 
@@ -10,6 +11,8 @@ app.constant('appConfig', {
 
 app.config(routesConfig);
 app.controller('overviewCtrl', overviewCtrl);
+app.directive('twentytwenty', twentytwenty);
+
 
 //Initialize angular material styling with bootstrap
 $.material.init();

@@ -7,8 +7,13 @@
 	<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.min.css"></link>
 	<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css"></link>
 	<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/roboto.min.css"></link>
+	<link rel="stylesheet" href="bower_components/twentytwenty/twentytwenty.css" />
+	<link rel="stylesheet" href="bower_components/prettify/prettify.css" />
+	<link rel="stylesheet" href="http://localhost:3000/css/style.css" />
 	<link rel="stylesheet" href="css/theme.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
+	
+	
 	
 	<title>Prog5</title>
 	
@@ -17,14 +22,21 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	
+
 	<!-- Das pointy pony -->
 	<!-- Change this line to prod before release -->
-	<script src="http://advans-dev.herokuapp.com/js/pointypony.js"></script>
+	<!--<script src="http://advans-dev.herokuapp.com/js/pointypony.js"></script>-->
+	<script src="http://localhost:3000/js/pointypony.js"></script>
+
 	
 	<!-- Material design -->
 	<script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
 	<script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+	<script src="bower_components/prettify/prettify.js"></script>
+	
+	<!-- Twenty Twenty -->
+	<script src="bower_components/twentytwenty/jquery.event.move.js"></script>
+	<script src="bower_components/twentytwenty/jquery.twentytwenty.js"></script>
 	
 	
  	<script src="app.js" defer></script>
@@ -48,6 +60,13 @@
               <ul class="dropdown-menu">
                 <li><a ui-sref="week1">Informatie</a></li>
                 <li><a ui-sref="week1Opdrachten">Opdrachten</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b><div class="ripple-wrapper"></div></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="week2">Informatie</a></li>
+                <li><a ui-sref="week2Opdrachten">Opdrachten</a></li>
               </ul>
             </li>
           </ul>

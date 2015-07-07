@@ -1,0 +1,145 @@
+<div class="row">
+
+	<div class="col-md-3 " ng-controller="overviewCtrl">
+		
+		<div class="sideNav">
+				
+			<!-- header -->
+			<article class="sample shadow-z-1">
+				<section class="header">
+					<span>Overview</span>
+				</section>
+			</article>
+			
+			<!-- fixed content -->
+			<article id="overview" class="shadow-z-1 fixedContent">
+				<img src="img/pointer.png" class="pointer"></img>
+				<section class="main">
+					<ul >
+						<li><a ng-click="scrollTo('#inleiding')">Inleiding</a></li>
+						<li><a ng-click="scrollTo('#opdracht2')">Telefoonboek</a></li>
+					</ul>
+				</section>
+			</article>
+		</div>
+
+	</div>
+
+	<div class="col-md-6 article-container">
+		
+		<section class="preHeader">
+		 	<h2>Opdrachten week 2</h2>
+		</section>
+		
+		<article class="sample shadow-z-1" id="inleiding" >
+			<section class="header">
+				<span>Inleiding</span>
+			</section>
+			<section class="main">
+			
+				<p>
+				Op deze pagina vind je de opdrachten voor week 2. 
+				</p>
+				
+				<p>
+				Elke week zijn er een aantal <b> <span class="easy">makkelijke</span>, <span class="medium">medium</span> en <span class="hard">moeilijke</span></b> opdrachten waar je in het practicum aan gaat werken. 
+				Aan het begin kan je de uitwerking van de opdrachten aan je docent laten zien. Deze zal ze afvinken en je zult hiervoor avans punten krijgen.
+				</p>
+				
+				<p>
+				Voor het huiswerk van elke weeg staat er een start project klaar. 
+				Deze startprojecten zijn onderdeel van de github repository waarmee dit webdictaat gemaakt is. 
+				Om deze start projecten te gebruiken kun je het beste de github repo clonen. 
+				Rechts van dit informatie blok staat een link en een clone button.
+				Voor elk project is meteen een uitwerking toegevoegd. Gebruik deze om te spieken als je er even niet meer uit komt.
+				</p>
+
+					</br>
+				
+
+				<p>
+					Daarnaast bevat elke opdracht, ook een <b>Unit test</b> project en een aantal <b>interface</b> objecten. 
+					Gebruik deze interfaces om je eigen objecten te immplementeren, en run de tests om te controlleren of de opdracht goed is.
+				</p>	
+			
+				
+				<p>
+				De workshop opdrachten zijn tevens huiswerk opdrachten. Deze opdrachten zijn oefenmateriaal voor het assessment aan het einde van dit blok. 
+				De opdrachten zijn niet verplicht, maar de eindopdracht wordt pittig. 
+				Ik kan je aanraden deze opdrachten dus netjes bij te houden. 
+				</p>
+				
+				<p>
+				Ready? Set? <b>Go!</b>
+				</p>
+			</section>
+			
+		</article>
+			
+		<article class="sample shadow-z-1 hard" id="opdracht2" data-spy="opdracht2" data-target="#opdracht2">
+			<section class="header">
+				<span>Opdracht - Telefoonboek in .NET</span>
+				<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+			</section>
+			
+			<section class="main">
+					
+				<p>	
+					In deze oefening ga je een eenvoudig telefoonboek maken in .NET. Het doel van deze oefening is te leren omgaan met C# properties en LINQ expressies.
+				</p>
+				
+				<p>
+					Net als in de voorgaande oefening (1.1) is het van belang om netjes en gestructureerd te coderen. Houd je daarbij ook aan de C# Naming Conventions.
+					Maak een class Person. De class moet de volgende properties bevatten: FirstName, LastName en TelephoneNumber. Zorg daarnaast voor een Read-Only property FullName die de combinatie FirstName en LastName terug geeft. Zorg ook voor een constructor waarmee je een firstname & lastname 	mee kan geven.
+				</p>
+				<p>
+					Maak een class TelephoneBook deze bevat intern een collectie van Person objecten Tip: gebruik hiervoor List<Person>. Vul deze list hard-coded met gegevens van minimaal 10 personen.
+					De TelephoneBook class moet de volgende functionaliteiten hebben. implementeer deze functionaliteiten zoveel mogelijk met LINQ expressies.
+				
+				<ul>						
+					<li>Een methode die alle personen uit het telefoonboek gesorteerd op achternaam terug geeft.</li>
+					<li>Een methode die alle personen uit het telefoonboek terug geeft waarvan de voornaam begint met een opgegeven letter. Deze lijst moet ook weer gesorteerd op achternaam zijn.</li>
+					<li>Een methode die alle achternamen van personen uit het telefoonboek terug geeft waarvan de lengte van de achternaam groter is dan een opgegeven waarde. </li>
+					<li>De lijst van achternamen moet gesorteerd op lengte teruggegeven worden waarbij de langste achternaam bovenaan staat en de kortste achternaam onderaan.</li>	
+					<li>Een read-only property die aangeeft hoeveel personen er in het telefoonboek zitten.</li>
+				</ul>
+				
+				<p>
+					Test je code door de functies van je telefoonboek aan te roepen en het resultaat te tonen in een Console.
+				</p>
+				
+				<img src="week1/img/telefoonboek.jpg" class="photo" />
+				
+			</section>
+			</section>
+			
+			<section class="footer">
+				
+
+			</section>
+		
+		</article>
+		
+	</div>
+	<div class="col-md-3">
+		
+		<div class="sideNav">
+				
+			<!-- header -->
+			<article class="sample shadow-z-1">
+				<section class="header">
+					<span>Github</span>
+				</section>
+				<section class="main">
+				 <a  target="_blank" href="https://github.com/Avans/Prog5/">https://github.com/Avans/Prog5/</a></br>
+						   					  <a class="md-col-3" href="github-windows://openRepo/https://github.com/Avans/Prog5/">
+						</button>
+						<button class="btn btn-inverse btn-raised">Clone To Desktop<div class="ripple-wrapper"></div></button>
+					  </a>
+			</section>
+			</article>	
+			
+		</div>
+		
+	</div>
+</div>

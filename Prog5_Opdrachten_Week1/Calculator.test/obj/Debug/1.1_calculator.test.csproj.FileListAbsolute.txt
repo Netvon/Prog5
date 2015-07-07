@@ -1,0 +1,17 @@
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\obj\Debug\1.1_calculator.test.csprojResolveAssemblyReference.cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\bin\Debug\1.1_calculator.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\bin\Debug\1.1_calculator.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\obj\Debug\1.1_calculator.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\obj\Debug\1.1_calculator.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\bin\Debug\1.1_calculator.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten\1.1_calculator.test\bin\Debug\1.1_calculator.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\bin\Debug\1.1_calculator.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\bin\Debug\1.1_calculator.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\obj\Debug\1.1_calculator.test.csprojResolveAssemblyReference.cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\obj\Debug\1.1_calculator.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\obj\Debug\1.1_calculator.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\bin\Debug\1.1_calculator.uitwerking.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.1_calculator.test\bin\Debug\1.1_calculator.uitwerking.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\obj\Debug\1.1_calculator.test.csprojResolveAssemblyReference.cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\obj\Debug\1.1_calculator.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\obj\Debug\1.1_calculator.test.pdb
