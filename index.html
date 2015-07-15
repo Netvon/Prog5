@@ -82,7 +82,65 @@
       </div>
 	</div>
 
-	<div ui-view class="content"></div>
+	<div class="row content" >
+		
+		<!-- First the side nav with col md 3 -->
+		<div class="col-md-3" ng-controller="overviewCtrl">
+			
+			
+			<div class="sideNav">
+				
+				<!-- header -->
+				<article class="sample shadow-z-1">
+					<section class="header">
+						<span>Overview</span>
+					</section>
+				</article>
+				
+				<!-- fixed content -->
+				<article id="overview" class="shadow-z-1 fixedContent">
+					<section class="main">
+						
+						<av-side-nav>
+							
+							<ul>
+								<li><span id="nav-week1">Week 1</span>
+									<ol>
+										<li><a ui-sref="week1" ng-click="scrollTo('inleiding')">Inleiding</a></li>
+										<li><a ui-sref="week1" ng-click="scrollTo('net')">Introductie .NET</a></li>	
+										<li><a ui-sref="week1" ng-click="scrollTo('visualStudio')">Introductie Visual Studio</a></li>
+										<li><a ui-sref="week1" ng-click="scrollTo('helloworld')">Demo: Hello World</a></li>
+										<li><a ui-sref="week1" ng-click="scrollTo('assemblies')">Assemblies</a></li>
+										<li><b><a ui-sref="week1Opdrachten">Opdrachten</a></b></li>
+									</ol>
+								</li>
+								<li><span id="nav-week2">Week 2</span>
+									<ol>
+										<li><a ui-sref="week2" ng-click="scrollTo('inleiding')">Inleiding</a></li>
+										<li><a ui-sref="week2" ng-click="scrollTo('properties')">Properties</a></li>	
+										<li><a ui-sref="week2" ng-click="scrollTo('lamda')">Lamda</a></li>	
+										<li><a ui-sref="week2" ng-click="scrollTo('linq')">Linq</a></li>
+										<li><a ui-sref="week2" ng-click="scrollTo('test')">Unit Test</a></li>
+										<li><a ui-sref="week2" ng-click="scrollTo('testaaa')">Unit Test - AAA</a></li>
+										<li><a ui-sref="week2" ng-click="scrollTo('code')">Extra: Coding Guidelines</a></li>
+										<li><b><a ui-sref="week2Opdrachten">Opdrachten</a></b></li>
+									</ol>
+								</li>
+							</ul>
+							
+						</av-side-nav>
+						
+						
+						
+					</section>
+				</article>
+			</div>
+		</div>
+		
+		<!-- Col MD 6 en Col md 3 reserved for other content -->
+		<div ui-view ></div>
+			
+	</div>
 
 </body>
 </html>

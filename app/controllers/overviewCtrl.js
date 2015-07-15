@@ -6,9 +6,34 @@ module.exports = function($scope){
 	});
 	
 	self.scrollTo = function(elementId){
-	    $('html, body').animate({
-	        scrollTop: $(elementId).offset().top + -150
-	    }, 1000);
+		
+		localStorage.setItem('subMenuOpen',  elementId);
+		var element = document.getElementById(elementId);
+		
+		if(element){
+			
+		
+		    $('html, body').animate({
+		        scrollTop: $(element).offset().top + -150
+		    }, 1000);
+		}
+		
 	};
+	
+	self.goTo = function(elementId){
+		
+		var element = document.getElementById(elementId);
+		
+		if(element){
+
+		    $('html, body').animate({
+		        scrollTop: $(element).offset().top + -150
+		    }, 100);
+		}
+	}
+	
+	
+	var lastOpenId = localStorage.getItem('subMenuOpen');
+	self.goTo(lastOpenId);
 
 }
