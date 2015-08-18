@@ -1,0 +1,14 @@
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\bin\Debug\Telefoonboek.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\bin\Debug\Telefoonboek.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\bin\Debug\Telefoonboek.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\bin\Debug\Telefoonboek.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\obj\Debug\Telefoonboek.test.csprojResolveAssemblyReference.cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\obj\Debug\Telefoonboek.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\1.2_telefoonboek.test\obj\Debug\Telefoonboek.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\bin\Debug\Telefoonboek.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\bin\Debug\Telefoonboek.test.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\bin\Debug\Telefoonboek.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\bin\Debug\Telefoonboek.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\obj\Debug\Telefoonboek.test.csprojResolveAssemblyReference.cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\obj\Debug\Telefoonboek.test.dll
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek.test\obj\Debug\Telefoonboek.test.pdb

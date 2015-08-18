@@ -1,0 +1,13 @@
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\bin\Debug\CsharpCity.exe.config
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\bin\Debug\CsharpCity.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\bin\Debug\CsharpCity.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\MainWindow.baml
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\MainWindow.g.cs
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\App.g.cs
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity_MarkupCompile.cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity.g.resources
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity.Properties.Resources.resources
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity.csproj.GenerateResource.Cache
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\CsharpCity\obj\Debug\CsharpCity.csprojResolveAssemblyReference.cache

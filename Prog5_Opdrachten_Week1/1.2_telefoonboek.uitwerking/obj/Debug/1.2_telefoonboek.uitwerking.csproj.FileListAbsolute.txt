@@ -1,5 +1,0 @@
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.2_telefoonboek.uitwerking\bin\Debug\1.2_telefoonboek.uitwerking.exe.config
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.2_telefoonboek.uitwerking\bin\Debug\1.2_telefoonboek.uitwerking.exe
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.2_telefoonboek.uitwerking\bin\Debug\1.2_telefoonboek.uitwerking.pdb
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.2_telefoonboek.uitwerking\obj\Debug\1.2_telefoonboek.uitwerking.exe
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\1.2_telefoonboek.uitwerking\obj\Debug\1.2_telefoonboek.uitwerking.pdb

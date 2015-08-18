@@ -1,0 +1,6 @@
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator\bin\Debug\Calculator.uitwerking.exe.config
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator\bin\Debug\Calculator.uitwerking.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator\bin\Debug\Calculator.uitwerking.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator\obj\Debug\Calculator.uitwerking.exe
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator\obj\Debug\Calculator.uitwerking.pdb
+C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator\obj\Debug\Calculator.uitwerking.csprojResolveAssemblyReference.cache
