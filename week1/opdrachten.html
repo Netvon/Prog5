@@ -76,11 +76,14 @@
 			
 		</article>
 		
-		<article class="sample shadow-z-1 easy" id="helloWorld" ">
-			<section class="header">
-				<span>Opdracht - "Hello World"</span>
-				<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
-			</section>
+		<!-- Hoi Stijn, Waarschijnelijk kun je je niet herrineren waar je gebleven was, bij deze: 
+			De scope van je assignment directgive (pointy pony) is niet goed. Hij is niet 'isloated'. Op dit moment veranderen allebei je directeves mee na de link functie'
+		-->
+		
+		<article class="sample shadow-z-1 easy" assignment="HelloWorld"> 
+			
+			<!-- Include default assignment header -->
+			<section class="header" ng-include="'templates/assignmentHeader.html'"></section>	
 			
 			<section class="main">
 				
@@ -95,17 +98,19 @@
 					<li>Let op dat je een template kiest met de taal C#.</li>
 					<li>Let op dat de template die je kiest een console application template is. </li>
 					<li>Kom je er niet uit? Kijk nog een keer naar de <a href="https://www.youtube.com/watch?v=Cq3V56KWZgc" target="_blank" >screencast</a></li>
-				</ul>
-			<section class="footer">
+				</ul>	
 				
 			</section>
+			
+			<!-- Include default assignment footer -->
+			<section class="footer" ng-include="'templates/assignmentFooter.html'"></section>	
+			
 		</article>
-		
-		<article class="sample shadow-z-1 hard" id="calculator">
-			<section class="header">
-				<span>Opdracht - Leeftijd calculator in .NET</span>
-				<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
-			</section>
+	
+		<article class="sample shadow-z-1 hard" assignment="calculator"> 
+			
+			<!-- Include default assignment header -->
+			<section class="header" ng-include="'templates/assignmentHeader.html'"></section>	
 			
 			<section class="main">
 				
@@ -131,56 +136,14 @@
 					Zorg dat je gedurende deze debug sessie verschillende Debug Windows open hebt staan en inspecteer deze tijdens het debuggen.
 				</p>
 			
-			<section class="footer">
 				
-
 			</section>
-		
+			
+			<!-- Include default assignment footer -->
+			<section class="footer" ng-include="'templates/assignmentFooter.html'"></section>	
+			
 		</article>
 		
-		<!--<article class="sample shadow-z-1 hard" id="opdracht2" data-spy="opdracht2" data-target="#opdracht2">
-			<section class="header">
-				<span>Opdracht - Telefoonboek in .NET</span>
-				<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
-			</section>
-			
-			<section class="main">
-					
-				<p>	
-					In deze oefening ga je een eenvoudig telefoonboek maken in .NET. Het doel van deze oefening is te leren omgaan met C# properties en LINQ expressies.
-				</p>
-				
-				<p>
-					Net als in de voorgaande oefening (1.1) is het van belang om netjes en gestructureerd te coderen. Houd je daarbij ook aan de C# Naming Conventions.
-					Maak een class Person. De class moet de volgende properties bevatten: FirstName, LastName en TelephoneNumber. Zorg daarnaast voor een Read-Only property FullName die de combinatie FirstName en LastName terug geeft. Zorg ook voor een constructor waarmee je een firstname & lastname 	mee kan geven.
-				</p>
-				<p>
-					Maak een class TelephoneBook deze bevat intern een collectie van Person objecten Tip: gebruik hiervoor List<Person>. Vul deze list hard-coded met gegevens van minimaal 10 personen.
-					De TelephoneBook class moet de volgende functionaliteiten hebben. implementeer deze functionaliteiten zoveel mogelijk met LINQ expressies.
-				
-				<ul>						
-					<li>Een methode die alle personen uit het telefoonboek gesorteerd op achternaam terug geeft.</li>
-					<li>Een methode die alle personen uit het telefoonboek terug geeft waarvan de voornaam begint met een opgegeven letter. Deze lijst moet ook weer gesorteerd op achternaam zijn.</li>
-					<li>Een methode die alle achternamen van personen uit het telefoonboek terug geeft waarvan de lengte van de achternaam groter is dan een opgegeven waarde. </li>
-					<li>De lijst van achternamen moet gesorteerd op lengte teruggegeven worden waarbij de langste achternaam bovenaan staat en de kortste achternaam onderaan.</li>	
-					<li>Een read-only property die aangeeft hoeveel personen er in het telefoonboek zitten.</li>
-				</ul>
-				
-				<p>
-					Test je code door de functies van je telefoonboek aan te roepen en het resultaat te tonen in een Console.
-				</p>
-				
-				<img src="week1/img/telefoonboek.jpg" class="photo" />
-				
-			</section>
-			</section>
-			
-			<section class="footer">
-				
-
-			</section>
-		
-		</article>-->
 		
 	</div>
 	<div class="col-md-3">

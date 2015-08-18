@@ -13,6 +13,7 @@ namespace CsharpCity.Models
         //1. We moeten door de poort met tralies
         public void OpenGate()
         {
+            
             //bank.Guard;
             //bank.Gate.Sleutelgat
         }

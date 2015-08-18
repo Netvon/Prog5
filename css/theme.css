@@ -38,6 +38,7 @@ a:hover{
 	padding-right:15px;
 }
 
+
 .content  article  .header{
 	border-bottom:1px solid lightgray;
 	height:50px;
@@ -50,6 +51,15 @@ a:hover{
 
 .content article .header .glyphicon{
 	float:right;
+	font-size:40px;
+}
+
+.content article .header .glyphicon div{
+	position:absolute;
+	left:12px;
+	top:4px;
+	font-size:16px;
+	color:white;
 }
 
 .content  article  .main {
@@ -74,6 +84,8 @@ a:hover{
 	margin-left:12px;
 	margin-right:12px;
 }
+
+
 
 .navbar{
 	height:200px;
@@ -127,7 +139,7 @@ span.hard{
 }
 
 .easy .header .glyphicon{
-	color:green !important;
+	color:green;
 }
 
 
@@ -136,7 +148,7 @@ span.hard{
 }
 
 .medium .header .glyphicon{
-	color:gold !important;
+	color:gold;
 }
 
 
@@ -145,7 +157,7 @@ span.hard{
 }
 
 .hard .header .glyphicon{
-	color:darkred !important;
+	color:darkred;
 }
 
 @media all and (min-width: 992px) {
@@ -154,3 +166,19 @@ span.hard{
 	}
 }
 
+.firstblood{
+	color:black !important;
+	font-size:26px !important;
+	margin-top:8px !important;
+}
+
+.progress-title{
+	color:#c8c8c8;
+	font-size:14px;
+	font-style: italic;
+	
+}
+
+.progress .progress-bar, .progress .progress-bar-default{
+	background-color:#3f51b5;
+}

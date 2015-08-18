@@ -54,11 +54,11 @@
 				<p>
 					Maar waar gaan we het dan wel over hebben? Deze week komen de volgende onderwerpen aan bod:
 					<ul ng-controller="overviewCtrl">
-						<li><a ng-click="scrollTo('#properties')">Properties</a></li>	
-						<li><a ng-click="scrollTo('#lamda')">Lamda</a></li>	
-						<li><a ng-click="scrollTo('#linq')">Linq</a></li>
-						<li><a ng-click="scrollTo('#test')">Unit Test</a></li>
-						<li><a ng-click="scrollTo('#coding')">Extra: Coding Guidelines</a></li>
+						<li>Properties</li>	
+						<li>Lamda</li>	
+						<li>Linq</li>
+						<li>Unit Test</li>
+						<li>Extra: Coding Guidelines</li>
 					</ul>
 				</p>
 				
@@ -502,136 +502,103 @@ gefilterd = lijstje.Where(p => p.Lastname == "Smulders").ToList();
 			    
 			    
 	             <p>
-	                 Het .NET framework biedt je toegang tot de <strong>Assert</strong> klasse. 
+	                 Het .NET framework biedt je toegang tot de <a href="https://msdn.microsoft.com/en-us/library/ms182530.aspx" target="_blank"><strong>Assert</strong></a> klasse. 
 	                 Met deze klasse kun je waardes vergelijken. 
 	                 Komen de waardes niet overeen, dan mislukt je unit test. 
 	             </p>              
 
-	         	<codexamp>
-					 <div class="examp">
-						<h4>Assert</h4>
-		
-		                In your test method, you can call any number of methods of the Assert class, such as Assert.AreEqual(). 
-		                The Assert class has many methods to choose from, and many of those methods have several overloads.
-					 </div>
-					 <div class="code">
-							 <!-- Code snippet -->		
-							<pre class="prettyprint linenums">
-							var result = Calculator.Add(1, 1);
-							Assert.AreEqual(2, result);</pre>
-								
-						</div>
-					 </div>
-	         	</codexamp>
-			
-		
-		                <div class="block slide">
+				 <div class="examp">
+					<h4>Assert</h4>
+	
+	                In your test method, you can call any number of methods of the Assert class, such as Assert.AreEqual(). 
+	                The Assert class has many methods to choose from, and many of those methods have several overloads.
+				 </div>
+					
+				 <!-- Code snippet -->		
+				<pre class="prettyprint linenums">
+//1. arrange
+Calculator calcy = new Calculator();
 
+//2. act
+var result = calcy.Add(1, 1);
 
-			 
-			 
-			 
-		         <ul class="list-group">         
-		
-		            <!-- Assert -->
-		            <li class="list-group-item compile-container" >          
-		              
-		
-		             </li> 
-		             
-		            <!-- CollectionAssert -->
-		            <li class="list-group-item compile-container" >          
-		                <h4>CollectionAssert</h4>
-		
-		                Use the CollectionAssert class to compare collections of objects, and to verify the state of one or more collections.
-		                
-		                <div class="block slide">
-
-<!-- Code snippet -->		
-<pre class="prettyprint linenums">
-var listAssert = new List&lt;Car&gt;(){new Car{Merk=&quot;A&quot;,Model=&quot;B&quot;}};
-CollectionAssert.AreEqual(listAssert, result);</pre>
-		
-		                </div>
-		
-		             </li> 
-		             
-		             <!-- StringAssert -->
-		            <li class="list-group-item compile-container" >          
-		                <h4>StringAssert</h4>
-		
-		                Use the StringAssert class to compare strings. This class contains a variety of useful methods such as StringAssert.Contains, 
-		                StringAssert.Matches, and StringAssert.StartsWith.
-		    
-		
-		                <div class="block slide">
-
-<!-- Code snippet -->		
-<pre class="prettyprint linenums">
-var result = Person.FullName();
-StringAssert.Contains(result, "stijn");</pre>
-		
-		                </div>
-		
-		             </li> 
-		             
-		             <!-- AssertFailedException -->
-		            <li class="list-group-item compile-container" >          
-		                <h4>AssertFailedException</h4>
-		
-		                The AssertFailedException exception is thrown whenever a test fails. A test fails if it times out, 
-		                throws an unexpected exception, or contains an Assert statement that produces a Failed result.
-		
-		                <div class="block slide">
-		
-<!-- Code snippet -->
-<pre class="prettyprint linenums">
-cars.ThisShouldThrowAnException();
-throw new AssertFailedException("Expected exception was not thrown.");</pre>
-		
-		                </div>
-		
-		             </li> 
-		             
-		
-		             
-		            <!-- ExpectedExceptionAttribute -->
-		            <li class="list-group-item compile-container" >          
-		                <h4>ExpectedExceptionAttribute</h4>
-		
-		                
-		                Decorate a test method with the ExpectedExceptionAttribute attribute when you want the test method to verify that an exception 
-		                you expect to be thrown by a method in your development code is indeed being thrown in that method.
-		
-		                <div class="block slide">
-		
-<!-- Code snippet -->
-<pre class="prettyprint linenums">
-[TestMethod]
-[ExpectedException(typeof(NullReferenceException))]
-public void MyTestMethod()</pre>
-		
-		                </div>
-		
-		             </li> 
-		             
-		         </ul>
+//3. assert
+Assert.AreEqual(2, result);</pre>
+							
 
 			</section>
 		</article>
 	
 		<article class="sample shadow-z-1" id="coding">
 			<section class="header">
-				<span>Coding Guidelines</span>
+				<span>Extra: Coding Guidelines</span>
 			</section>
 			
 			<section class="main"style="min-height:300px;">
 				
-
+				<p>
+				Coding Guidelines houd in dat we afspraken gaan maken over hoe onze code 'stylen' 
+				Hierbij moet je denken aan bijvoorbeeld de volgende dingen: 
+				<ul>
+					<li>Inspringen</li>
+					<li>Haakjes</li>
+					<li>Wanneer een lege regel</li>
+					<li>Wanneer & hoe commentaar</li>
+				</ul>
+				</p>
 				
+				<p>
+					Het maakt niet uit welke coding guidelines je kiest als iedereen binnen je team maar de zelfde guidelines hanteert.
+					Bijvoorbeeld de microsoft coding guidelines. 
+				</p>
+				
+				<b>Microsoft Coding guidelines</b></br>
+				<a href="https://msdn.microsoft.com/en-us/library/ff926074.aspx" target="_blank">https://msdn.microsoft.com/en-us/library/ff926074.aspx</a> 
+				
+				
+				<p>
+				Daarnaast is het belangrijk om je te houden aan de coding conventions. 
+				Coding conventions zijn afspraken over de naamgeving binnen C#. 
+				In ons geval zijn dit de pascal casing en de camal casing. 
+				</p>
+				
+		
+				<h2>PascalCasing <span> ( <b>N</b>umberOfWheels ) </span></h2>
+				
+				<p>
+					PascalCasing houd in dat we de naam van een variabele beginnen met een hoofdletter. 
+					Verder beginnen alle lossen woorden binnen de naam ook met een hoofdletter.
+					PascalCasing passen we toe op de volgende onderdelen:
+				</p>
+				
+				<ul>
+					 <li>Classes</li>
+					 <li>Namespaces</li>
+					 <li>Methods</li>
+					 <li>Constructors / Deconstructors</li>
+					 <li>Properties</li>
+				</ul>
+				
+				<h2>camelCasing <span> ( <b>n</b>umberOfWheels ) </span></h2>
+				
+				<p>camelCasing is ongeveerd het zelfde als pascal casing, op het feit na dat de eerste letter van de naam een kleine letter is. 
+					camelCasing passen we toe op de volgende onderdelen:
+					
+				</p>
+				<ul>
+					<li>Fields</li>
+				 	<li>Lokale variabelen</li>
+				 	<li>Method parameters</li>
+				</ul>
+				
+				<p>
+					
+				</p>
+
 			</section>
 			
 			<section class="footer">
+				
 				
 				
 			</section>

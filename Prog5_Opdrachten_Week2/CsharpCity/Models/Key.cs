@@ -11,7 +11,6 @@ namespace CsharpCity.Models
 
         public Key(string naam)
         {
-            // TODO: Complete member initialization
             this._naam = naam;
         }
     }
