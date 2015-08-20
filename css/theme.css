@@ -86,7 +86,6 @@ a:hover{
 }
 
 
-
 .navbar{
 	height:200px;
 	margin-bottom:-130px;
@@ -160,9 +159,14 @@ span.hard{
 	color:darkred;
 }
 
+
 @media all and (min-width: 992px) {
 	 .sideNav{
 		display:block;
+	}
+	
+	.smallnav{
+		display: none;
 	}
 }
 
