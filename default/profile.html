@@ -27,9 +27,23 @@
 					
 					<div class="col-md-6">
 						<label>Points</label></br>
-						<span class="points">{{user.points}}</span>
+						<span class="points">{{user.totalPoints}}</span>
 					</div>
 				</div>
+			</section>
+			
+			<section class="footer">
+				
+				
+			</section>
+		
+		</article>
+		
+		<article class="sample shadow-z-1" ng-repeat="pointItem in user.totalPointCollection">
+
+			
+			<section class="main">
+				{{pointItem.assignmentName}} - {{pointItem.points}} - {{pointItem.timestamp | date:'short'}}
 			</section>
 			
 			<section class="footer">
