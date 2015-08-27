@@ -1,0 +1,324 @@
+<div class="col-md-6">
+		
+		<section class="preHeader">
+		 	<h2>Lesstof week 3 - Introductie WPF</h2>
+		</section>
+		
+		<article class="sample shadow-z-1" id="inleiding">
+			<section class="header">
+				<span>Inleiding</span>
+			</section>
+			
+			<section class="main">
+				
+				Wat gaan we deze week doen?
+				
+			</section>
+			
+			<section class="footer">
+				
+				
+			</section>
+		
+		</article>
+		
+		<article class="sample shadow-z-1" id="architectuur">
+			<section class="header">
+				<span>Architectuur</span>
+			</section>
+			
+			<section class="main">
+			
+				<p>
+					Een <strong>Model View View Model (MvvM)</strong>  software architectuur kun je gebruiken om een duidelijk onderscheid te maken 
+					tussen de bedrijfslogica en de user interface (<a target="_blank" href="https://twitter.com/hashtag/soc">#SOC</a> <a target="_blank" href="https://twitter.com/hashtag/soc">#SOC</a> <a target="_blank" href="https://twitter.com/hashtag/soc">#SOC</a>). Het lijkt heel erg veel op de software architectuur <strong>Model View Controller (MVC)</strong>, 
+					met misschien als grootste verschil dat er binnen MvvM bijna altijd gebruik gemaakt wordt van Data-binding. 
+			
+				</p>
+				
+				<p>
+				MvvM is zeer geschikt voor het bouwen van een complexe user interface waar veel elementen een afhankelijkheid hebben van elkaar. 
+				</p>
+				
+				<h4>Voordelen MvvM</h4>
+				
+				<ul>
+					<li>Loskoppelen UI/Business / Data Logic</li>
+					<li>
+						Mogelijk om UI te vervangen
+						<ul>
+							<li>Logica in code hoeft hierdoor niet aangepast te worden</li>
+							<li>ASP.NET naar Silverlight</li>
+							<li>WPF naar Windows Phone</li>
+							<li>etc.</li>
+						</ul>
+					</li>
+					<li>Unit Testing</li>
+					<li>Minder code in de UI</li>
+				</ul>
+				
+				<img src="week4/img/MvvM.png" class="top-buffer"/>
+				
+				<!--<a href="https://www.youtube.com/watch?v=q-yho2LfQ0Q">https://www.youtube.com/watch?v=q-yho2LfQ0Q</a>-->
+				
+			</section>
+		</article>
+		
+		<article class="sample shadow-z-1" id="spelregels">
+			<section class="header">
+				<span>De spelregels</span>
+			</section>
+			
+			<section class="main">		
+	
+					<ul>
+						<li><strong>View</strong> weet niets van het <strong>Model</strong></li>
+						<li><strong>Model</strong> weet niets van de <strong>View</strong></li>
+						<li><strong>Model</strong> weet niets van het <strong>View Model</strong></li>
+						<li><strong>View Model</strong> weet niets van de <strong>View</strong></li>
+						<li>Communicatie van de <strong>View</strong> naar het <strong>VM</strong> is via data binding</li>
+					</ul>
+			</section>
+		</article>
+				
+		<article class="sample shadow-z-1" id="app">
+			<section class="header">
+				<span>MvvM App</span>
+			</section>
+			
+			<section class="main">		
+	
+								
+				<p>De volgende onderdelen komen voor in een MvvM <strong>CRUD</strong> applicatie. </p>
+			
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Model</h4>
+						
+						<p>
+							Hoe ziet een MvvM applicatie er nu uit? Laten we beginnen met het <strong>Model</strong>, 
+							een klassiek <strong>POCO</strong> object wat je zo een database in kan schuiven. 
+							Om dit object te tonen in de view moeten we ons aan de spelregels houden. 
+							De eerste stap is het maken van een <strong>View Model</strong> die we toegang geven tot dit object.
+						</p>
+					</div>
+					<div class="col-md-6">
+						
+						<pre class="prettyprint linenums">
+public class Song
+{
+  public int Id { get; set; }
+
+  public string Artist { get; set; }
+
+  public string Title { get; set; }
+}</pre>
+							
+					</div>
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h4>View Model</h4>
+						<p>
+							Het View Model accepteert dit model als een parameter in de constructor. Is er geen object aanwezig dan maakt het View model zelf 
+							een nieuwe instantie aan van het model. 
+						</p>
+						<p>
+							De properties op het model kunnen we toegankelijk maken via <strong>properties</strong> op het View Model. 
+							Dit lijkt misschien onpraktisch maar het is eigenlijk heel handig. Eventuele wijzigingen op het model hebben geen rechtstreekse 
+							invloed op de <strong>View</strong>. Daarnaast kunnen we eventueel nog checks doen op het model voor we de waarde doorgeven aan de view. 
+						</p>
+						
+						<p>
+						Dit view Model kan ook business logica bevatten die je wilt hergebruiken over meerdere views. 
+							Het zou <strong>niet</strong> netjes zijn als je deze logica op de POCO objecten zou defini&euml;ren, aangezien het dan geen POCO objecten meer zijn!
+						</p>
+					</div>
+					<div class="col-md-6">
+						<pre class="prettyprint linenums">
+							
+public class SongViewModel : INotifyPropertyChanged
+{
+  private Song _song;
+
+  public SongViewModel()
+  {
+    _song = new Song();
+  }
+
+  public SongViewModel(Song song)
+  {
+    _song = song;
+  }
+}</pre>
+
+					</div>
+				</div>
+				
+					<h4>View Model Container</h4>
+					<p>
+					Een <strong>CRUD</strong> applicatie vereist de volgende Functionaliteit:
+						<ul>
+							<li>Een lijst van objecten</li>
+							<li>Nieuwe objecten toevoegen</li>
+							<li>Bestaande objecten wijzigen</li>
+							<li>Bestaande objecten verwijderen</li>
+						</ul>
+					Deze functionaliteit gaan we defini&euml;ren op een tweede <strong>View Model</strong>.
+				</p>
+			
+				<p>
+					Dit View Model bevat niet zomaar een lijst van objecten, maar een <strong>ObservableCollection</strong>. Daarnaast bevat dit model ook een Property om toegang te verlenen tot 1 element uit de lijst (Song). Dit object is de basis voor een nieuw element voor in de lijst. 
+				</p>
+			
+				<p>
+					Het laatste vernieuwde object wat we nog niet kennen is de <strong>RelayCommand</strong>. Meer informatie over dit object vind je onderaan deze pagina.
+				</p>
+			
+				
+						<pre class="prettyprint linenums">
+public class SongListviewModel
+{
+  ISongRepository songRepository;
+
+  public SongViewModel Song { get; set; }
+
+  public ObservableCollection&lt;SongViewModel&gt; Songs { get; set; }
+
+  public ICommand AddSong { get; set; }
+
+  public SongListviewModel()
+  {
+    songRepository = new DummySongRepository();
+    var songList = songRepository.ToList().Select(s =&gt; new SongViewModel(s));
+
+    Song = new SongViewModel();
+    Songs = new ObservableCollection&lt;SongViewModel&gt;(songList);
+    AddSong = new RelayCommand(AddNewSong);
+  }
+
+
+  private void AddNewSong(object parameter)
+  {
+    Songs.Add(Song);
+  }
+}</pre>
+				
+				<hr>
+				
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h4>View</h4>
+			
+						<p>
+							Omdat we in het View Model gebruik hebben gemaakt van een <strong> ObservableCollection</strong> kunnen we nu 
+							rechtstreeks tegen deze collectie aan binden. Dit doen we via een <strong>DataGrid</strong>. 
+						</p>
+						<p>
+							De Collection kunnen we rechtstreeks aan de <strong>ItemSource</strong> van deze DataGrid binden. 
+							De kolommen kunnen individueel worden aangegeven, alsmede aan welke property deze gebonden moet worden.
+						</p>
+			
+					</div>
+					<div class="col-md-6">
+						
+						<pre class="prettyprint linenums">
+&lt;DataGrid AutoGenerateColumns=&quot;False&quot; 
+  ItemsSource=&quot;{Binding Songs}&quot; Margin=&quot;5&quot;&gt;
+	
+  &lt;DataGrid.Columns&gt;
+	
+    &lt;DataGridTextColumn Header=&quot;Id&quot; 
+      Binding=&quot;{Binding Id}&quot; /&gt;
+			
+      &lt;DataGridTextColumn Header=&quot;Artist&quot; 
+        Binding=&quot;{Binding Artist}&quot; Width=&quot;300&quot; /&gt;
+			
+        &lt;DataGridTextColumn Header=&quot;Title&quot; 
+          Binding=&quot;{Binding Title}&quot; Width=&quot;*&quot; /&gt;
+			
+  &lt;/DataGrid.Columns&gt;
+	
+&lt;/DataGrid&gt;</pre>
+						
+					</div>
+				</div>
+				
+
+				<h4>Bronnen</h4>
+				<ul>
+				<li><a href="http://msdn.microsoft.com/en-us/library/ms173171.aspx">Delegates: http://msdn.microsoft.com/en-us/library/ms173171.aspx</a></li>
+				</ul>				
+					
+			</section>
+		</article>
+		
+		<article>
+			
+		<article class="sample shadow-z-1" id="relay">
+			<section class="header">
+				<span>Extra: RelayCommand</span>
+			</section>
+			
+			<section class="main">			
+			
+				<div class="row">
+					<div class="col-md-6">
+
+						<p>
+							Een <STRONG>RelayCommand</STRONG> is een zelfgemaakte generieke versie is van het ICommand. 
+							Dit Command kan worden hergebruikt over meerdere View Models en heeft als parameter een functie als een delegate, die bij de <strong>Execute</strong>  methode van het RelayCommand object wordt uitgevoerd. 
+						</p>
+					
+						<p>
+							Een <strong>delegate</strong> is een type dat een referentie naar een methode bevat. De delegate kan deze methode voor je uitvoeren. 
+							Meer informatie over delegates vind je in de bronnen onderaan deze pagina.
+						</p>
+					</div>
+					<div class="col-md-6">
+						
+						<pre class="prettyprint linenums">
+public class RelayCommand : ICommand
+{
+  private Action&lt;object&gt; action;
+
+  public RelayCommand(Action&lt;object&gt; action)
+  {
+    this.action = action;
+  }
+
+  public bool CanExecute(object parameter)
+  {
+    return true;
+  }
+
+  public void Execute(object parameter)
+  {
+    this.action(parameter);
+  }
+
+  public event EventHandler CanExecuteChanged;
+}</pre>
+					</div>
+				</div>
+			
+			</section>
+		</article>
+				
+
+</div>
+
+ <!-- Deze regel javascript hebben we nodig voor het 'prettifyen' van onze code snippits -->
+    <script>
+        
+      !function ($) {
+        $(function(){
+          window.prettyPrint && prettyPrint()   
+        })
+      }(window.jQuery)
+      
+    </script>

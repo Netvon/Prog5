@@ -1,8 +1,6 @@
 <html lang="en" ng-app="Prog5">
 <head>
 
-
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
 	<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.min.css"></link>
 	<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css"></link>
@@ -10,9 +8,10 @@
 	<link rel="stylesheet" href="bower_components/twentytwenty/twentytwenty.css" />
 	<link rel="stylesheet" href="bower_components/prettify/prettify.css" />
 	<link rel="stylesheet" href="http://localhost:3000/css/style.css" />
+	<!--<link rel="stylesheet" href="http://advans-dev.herokuapp.com/css/style.css" />-->
 	<link rel="stylesheet" href="css/theme.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
-	
+	<link rel="stylesheet" href="css/timeline.css"/>
 	
 	
 	<title>Prog5</title>
@@ -20,6 +19,7 @@
 	
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-animate.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -69,6 +69,14 @@
                 <li><a ui-sref="week2Opdrachten">Opdrachten</a></li>
               </ul>
             </li>
+			<li class="dropdown">
+              <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Week 3<b class="caret"></b><div class="ripple-wrapper"></div></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="week3a">Introductie WPF</a></li>
+				<li><a ui-sref="week3a">WPF Basics</a></li>
+                <li><a ui-sref="week3Opdrachten">Opdrachten</a></li>
+              </ul>
+            </li>
           </ul>
 		  
 		  <ul class="nav navbar-nav navbar-right" ng-show="user">
@@ -104,7 +112,7 @@
 						<av-side-nav>
 							
 							<ul>
-								<li><span id="nav-week1">Week 1</span>
+								<li><span id="nav-week1">Week 1 - .NET</span>
 									<ol>
 										<li><a ui-sref="week1" ng-click="scrollTo('inleiding')">Inleiding</a></li>
 										<li><a ui-sref="week1" ng-click="scrollTo('net')">Introductie .NET</a></li>	
@@ -114,7 +122,7 @@
 										<li><b><a ui-sref="week1Opdrachten">Opdrachten</a></b></li>
 									</ol>
 								</li>
-								<li><span id="nav-week2">Week 2</span>
+								<li><span id="nav-week2">Week 2 - C#</span>
 									<ol>
 										<li><a ui-sref="week2" ng-click="scrollTo('inleiding')">Inleiding</a></li>
 										<li><a ui-sref="week2" ng-click="scrollTo('properties')">Properties</a></li>	
@@ -124,6 +132,43 @@
 										<li><a ui-sref="week2" ng-click="scrollTo('test')">Extra: Unit Test</a></li>
 										<li><a ui-sref="week2" ng-click="scrollTo('testaaa')">Extra: Unit Test - AAA</a></li>		
 										<li><b><a ui-sref="week2Opdrachten">Opdrachten</a></b></li>
+									</ol>
+								</li>
+								<li><span id="nav-week3">Week 3 - WPF</span>
+									
+									<ol>
+										<li>Introductie
+											<ol>
+												<li><a ui-sref="week3a" ng-click="scrollTo('inleiding')">Inleiding</a></li>
+												<li><a ui-sref="week3a" ng-click="scrollTo('introductie')">Introductie WPF</a></li>	
+												<li><a ui-sref="week3a" ng-click="scrollTo('geschiedenis')">Geschiedenis WPF</a></li>	
+												<li><a ui-sref="week3a" ng-click="scrollTo('interface')">Interface design</a></li>
+												<li><a ui-sref="week3a" ng-click="scrollTo('databinding')">Data Binding</a></li>
+												<li><a ui-sref="week3a" ng-click="scrollTo('xaml')">Introductie XAML</a></li>
+											</ol>
+										</li>
+										<li>WPF Basics
+											<ol>
+												<li><a ui-sref="week3b" ng-click="scrollTo('inleiding')">Inleiding</a></li>
+												<li><a ui-sref="week3b" ng-click="scrollTo('xaml')">XAML</a></li>
+												<li><a ui-sref="week3b" ng-click="scrollTo('binding')">Binding</a></li>
+												<li><a ui-sref="week3b" ng-click="scrollTo('commanding')">Commanding</a></li>
+												<li><a ui-sref="week3b" ng-click="scrollTo('converting')">Converting</a></li>
+												<li><a ui-sref="week3opdrachten">Opdrachten</a></li>
+											</ol>
+										</li>
+				
+									</ol>
+								</li>
+								<li><span id="nav-week3">Week 4 - MvvM</span>
+									
+									<ol>
+										<li><a ui-sref="week4" ng-click="scrollTo('inleiding')">Inleiding</a></li>
+										<li><a ui-sref="week4" ng-click="scrollTo('architectuur')">Architectuur</a></li>	
+										<li><a ui-sref="week4" ng-click="scrollTo('spelregels')">Spelregels</a></li>	
+										<li><a ui-sref="week4" ng-click="scrollTo('app')">MvvM App</a></li>	
+										<li><a ui-sref="week4" ng-click="scrollTo('relay')">Extra: RelayCommand</a></li>	
+										<li><a ui-sref="week4" ng-click="scrollTo('frameworks')">Frameworks</a></li>
 									</ol>
 								</li>
 							</ul>
