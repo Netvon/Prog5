@@ -15,7 +15,7 @@ module.exports = function($stateProvider, $urlRouterProvider) {
         
         .state('week3a', { url: '/week3/introductie',  templateUrl:'week3/informatie_intro.html' })
         .state('week3b', { url: '/week3/wpfbasics',  templateUrl:'week3/informatie_basics.html' })
-        .state('week3opdrachten', { url: '/week3/opdrachten',  templateUrl:'week3/opdrachten.html' })
+        .state('week3Opdrachten', { url: '/week3/opdrachten',  templateUrl:'week3/opdrachten.html' })
         
         .state('week4', { url: '/week4',  templateUrl:'week4/informatie.html' })
         .state('week4Opdrachten', { url: '/week4/opdrachten',  templateUrl:'week4/opdrachten.html' })
@@ -24,6 +24,6 @@ module.exports = function($stateProvider, $urlRouterProvider) {
         .state('week5Opdrachten', { url: '/week5/opdrachten',  templateUrl:'week5/opdrachten.html' })
         
         .state('week6', { url: '/week6',  templateUrl:'week6/informatie.html' })
-        .state('week6Opdrachten', { url: '/week6opdrachten',  templateUrl:'week6/opdrachten.html' });
+        .state('week6Opdrachten', { url: '/week6/opdrachten',  templateUrl:'week6/opdrachten.html' });
    
 };
