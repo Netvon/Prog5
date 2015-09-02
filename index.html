@@ -25,8 +25,9 @@
 
 	<!-- Das pointy pony -->
 	<!-- Change this line to prod before release -->
-	<!--<script src="http://advans-dev.herokuapp.com/js/pointypony.js"></script>-->
-	<script src="http://localhost:3000/js/pointypony.js"></script>
+
+	<script src="http://advans-dev.herokuapp.com/js/pointypony.js"></script>
+	<!--<script src="http://localhost:3000/js/pointypony.js"></script>-->
 
 	
 	<!-- Material design -->
@@ -73,8 +74,29 @@
               <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Week 3<b class="caret"></b><div class="ripple-wrapper"></div></a>
               <ul class="dropdown-menu">
                 <li><a ui-sref="week3a">Introductie WPF</a></li>
-				<li><a ui-sref="week3a">WPF Basics</a></li>
+				<li><a ui-sref="week3b">WPF Basics</a></li>
                 <li><a ui-sref="week3Opdrachten">Opdrachten</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Week 4<b class="caret"></b><div class="ripple-wrapper"></div></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="week4">MvvM</a></li>
+                <li><a ui-sref="week4Opdrachten">Opdrachten</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Week 5<b class="caret"></b><div class="ripple-wrapper"></div></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="week5">Entity Framework</a></li>
+                <li><a ui-sref="week5Opdrachten">Opdrachten</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Week 6<b class="caret"></b><div class="ripple-wrapper"></div></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="week6">Introductie WPF</a></li>
+                <li><a ui-sref="week6Opdrachten">Opdrachten</a></li>
               </ul>
             </li>
           </ul>
@@ -126,7 +148,7 @@
 									<ol>
 										<li><a ui-sref="week2" ng-click="scrollTo('inleiding')">Inleiding</a></li>
 										<li><a ui-sref="week2" ng-click="scrollTo('properties')">Properties</a></li>	
-										<li><a ui-sref="week2" ng-click="scrollTo('lamda')">Lamda</a></li>	
+										<li><a ui-sref="week2" ng-click="scrollTo('lambda')">lambda </a></li>	
 										<li><a ui-sref="week2" ng-click="scrollTo('linq')">Linq</a></li>
 										<li><a ui-sref="week2" ng-click="scrollTo('coding')">Coding Guidelines</a></li>
 										<li><a ui-sref="week2" ng-click="scrollTo('test')">Extra: Unit Test</a></li>
@@ -154,10 +176,9 @@
 												<li><a ui-sref="week3b" ng-click="scrollTo('binding')">Binding</a></li>
 												<li><a ui-sref="week3b" ng-click="scrollTo('commanding')">Commanding</a></li>
 												<li><a ui-sref="week3b" ng-click="scrollTo('converting')">Converting</a></li>
-												<li><a ui-sref="week3opdrachten">Opdrachten</a></li>
 											</ol>
 										</li>
-				
+										<li><b><a ui-sref="week3Opdrachten">Opdrachten</a></b></li>			
 									</ol>
 								</li>
 								<li><span id="nav-week4">Week 4 - MvvM</span>
@@ -169,7 +190,9 @@
 										<li><a ui-sref="week4" ng-click="scrollTo('app')">MvvM App</a></li>	
 										<li><a ui-sref="week4" ng-click="scrollTo('frameworks')">Frameworks</a></li>
 										<li><a ui-sref="week4" ng-click="scrollTo('relay')">Extra: RelayCommand</a></li>	
-										<li><a ui-sref="week4opdrachten">Opdrachten</a></li>
+
+										<li><b><a ui-sref="week4Opdrachten">Opdrachten</a></b></li>
+
 									</ol>
 								</li>
 								<li><span id="nav-week5">Week 5 - EF</span>
@@ -181,7 +204,9 @@
 										<li><a ui-sref="week5" ng-click="scrollTo('codefirst')">Code First</a></li>	
 										<li><a ui-sref="week5" ng-click="scrollTo('dbfirst')">Database First</a></li>
 										<li><a ui-sref="week5" ng-click="scrollTo('tips')">Tips and Tricks</a></li>	
-										<li><a ui-sref="week5opdrachten">Opdrachten</a></li>
+
+										<li><b><a ui-sref="week5Opdrachten">Opdrachten</a></b></li>
+
 									</ol>
 								</li>
 								<li><span id="nav-week5">Week 6 - Finalé</span>
@@ -189,7 +214,9 @@
 									<ol>
 										<li><a ui-sref="week6" ng-click="scrollTo('inleiding')">Inleiding</a></li>
 										<li><a ui-sref="week6" ng-click="scrollTo('finale')">The Grand Finale</a></li>	
-										<li><a ui-sref="week6opdrachten">Opdrachten</a></li>
+
+										<li><b><a ui-sref="week6Opdrachten">Opdrachten</a></b></li>
+
 									</ol>
 								</li>
 							</ul>
