@@ -1,0 +1,15 @@
+E:\Github\Prog6_Week1_WorkshopA\XAMLDemo\bin\Debug\XAMLDemo.exe.config
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\bin\Debug\XAMLDemo.exe.config
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\bin\Debug\XAMLDemo.exe
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\bin\Debug\XAMLDemo.pdb
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo.csprojResolveAssemblyReference.cache
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\MainWindow.baml
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\App.baml
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\MainWindow.g.cs
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\App.g.cs
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo_MarkupCompile.cache
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo.g.resources
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo.Properties.Resources.resources
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo.csproj.GenerateResource.Cache
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo.exe
+E:\Prog5\Prog5_Opdrachten_Week3\XAMLDemo\obj\Debug\XAMLDemo.pdb
