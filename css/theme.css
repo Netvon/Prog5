@@ -215,6 +215,12 @@ span.hard{
 	margin-top:8px !important;
 }
 
+.complete{
+	color: green !important;
+	font-size:26px !important;
+	margin-top:8px !important;
+}
+
 .progress-title{
 	color:#c8c8c8;
 	font-size:14px;
