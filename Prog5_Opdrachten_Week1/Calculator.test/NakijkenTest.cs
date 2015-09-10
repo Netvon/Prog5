@@ -27,7 +27,7 @@ namespace Caulculator.test
         public void Input_Voldoet_Aan_Format()
         {
             //1. Arrange
-            string input = "15/03/1990";
+            string input = "15-03-1990";
             DateTime result;
 
             //2. Act
