@@ -18,6 +18,10 @@ body{
 	font-size:80%;
 }
 
+.leaderboard .consolation{
+	border-top:1px solid gray;
+}
+
 .leaderboard td{
 	
 	padding:4px;

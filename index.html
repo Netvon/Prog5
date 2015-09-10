@@ -101,7 +101,18 @@
             </li>
           </ul>
 		  
+		  <!--<ul class="nav navbar-nav navbar-left" >
+			  <li class="dropdown">
+		  		<a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Extra<b class="caret"></b><div class="ripple-wrapper"></div></a>
+				<ul class="dropdown-menu">
+					<li><a ui-sref="pullrequest">Helpl mee!</a></li>
+					<li><a ui-sref="Avanspunten">Avans punten</a></li>
+				</ul>
+			</li>
+		  </ul>-->
+		  
 		  <ul class="nav navbar-nav navbar-right" ng-show="user">
+			  <li class="dropdown">
 			  <li><a class="navbar-brand" ui-sref="profile">{{user._id}} - <b>{{user.totalPoints}} AP</b></a></li>
 			  <li><a class="navbar-brand" ng-click="logout()">Logout</a></li>
 		  </ul>
