@@ -16,7 +16,7 @@ namespace Telefoonboek
 
         List<IPerson> FirstNameStartWith(char firstChar);
 
-        List<IPerson> LastNameLongerThen(int length);
+        List<IPerson> LastNameLongerThan(int length);
 
         List<IPerson> SortByLastNameLength();
     }
