@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
-using Caulculator;
+using Calculator;
 
-namespace Caulculator.test
+namespace Calculator.test
 {
     [TestClass]
     public class NakijkenTest
