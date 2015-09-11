@@ -132,17 +132,40 @@ a:hover{
 	margin-top:-6px;
 }
 
+section.sub{
+	border-top: 1px solid lightgray;
+	margin-bottom:-4px;
+	padding-bottom:4px;
+}
+
+section.easy{
+	border-left:3px solid green;
+
+}
+
+
 span.easy{
 	color: green ;
+}
+
+
+
+section.medium{
+	border-left:3px solid gold;
 }
 
 span.medium{
 	color: gold;
 }
 
+section.hard{
+	border-left:3px solid darkred;
+}
+
 span.hard{
 	color:darkred;
 }
+
 
 .easy .header{
 	border-bottom:2px solid green !important;
@@ -171,6 +194,11 @@ span.hard{
 }
 
 
+.wrong{
+    text-decoration: line-through;
+}
+
+
 @media all and (min-width: 992px) {
 	 .sideNav{
 		display:block;
@@ -183,6 +211,12 @@ span.hard{
 
 .firstblood{
 	color:black !important;
+	font-size:26px !important;
+	margin-top:8px !important;
+}
+
+.complete{
+	color: green !important;
 	font-size:26px !important;
 	margin-top:8px !important;
 }
