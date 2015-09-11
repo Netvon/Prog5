@@ -87,7 +87,7 @@
 				</p>
 				
 				<p>
-					Als je in java een field alleen leesbaar wil maken dan is het gebruikelijk om een private field te maken met een bijbehorende functie als 'getter'.
+					Als je in java een field alleen leesbaar wilt maken dan is het gebruikelijk om een private field te maken met een bijbehorende functie als 'getter'.
 					Daarnaast is het mogelijk een functie als 'setter' toe te voegen en eventuele validatie uit te voeren op de nieuwe waarde van het veld. 
 				</p>
 	
@@ -142,7 +142,7 @@ public class Person
 
 
 			<p>Dit kan ook in een kortere variant. 
-			 het onderstaande voorbeeld zal er onderwater een private field gemaakt worden waarmee de getter en setter hun waarde benaderen. 
+			 In het onderstaande voorbeeld zal er onder water een private field gemaakt worden waarmee de getter en setter hun waarde benaderen. 
 			 Het is slim om jezelf aan te leren deze korte syntax te gebruiken voor properties i.p.v public fields. Hiermee kun je in de toekomst makkelijker 
 			 bijvoorbeeld de 'set' private maken.  
 			 
@@ -150,7 +150,7 @@ public class Person
 			
 			
 			<p>
-				Daarnaast is het ook mogelijk om zelf te bepalen of je een get of een set implementeerd. De implementatie mag ook meet logica bevatten. 
+				Daarnaast is het ook mogelijk om zelf te bepalen of je een get of een set implementeert. De implementatie mag ook meer logica bevatten. 
 			</p>
 			
 			<div class="row">
@@ -213,8 +213,10 @@ public class Person
 			</section>
 			
 			<section class="main"style="min-height:300px;">
-				<blockquote>
-					"A lambda expression is an anonymous function that you can use to create delegates or expression tree types. By using lambda expressions, you can write local functions that can be passed as arguments or returned as the value of function calls. Lambda expressions are particularly helpful for writing LINQ query expressions.""
+				<blockquote class="text-center">
+					"A lambda expression is an anonymous function that you can use to create delegates or expression tree types. By using lambda expressions, you can write local functions that can be passed as arguments or returned as the value of function calls. Lambda expressions are particularly helpful for writing LINQ query expressions."
+					</br>
+					<i>- msdn.microsoft.com -</i>
 				</blockquote>
 				
 				<p>Duidelijk toch? Dat dacht ik al</p>
@@ -228,10 +230,11 @@ public class Person
 	n => n % 2 == 1 
 </pre>			
 
-				<p>Wat doet deze expressie nu eigenlijk? Als je een Lambda expressie defineerd, defineer je onderwater een 'anonieme' functie. 
-					Dit is een functie zonder naam, die je maar 1 keer uitgevoerd word. 
+				<p>
+					Wat doet deze expressie nu eigenlijk? Als je een Lambda expressie definieert, defineer je onder water een 'anonieme' functie. 
+					Dit is een functie zonder naam, die maar één keer uitgevoerd wordt.
 					Lambda expressies zijn niet meer dan een 'korte syntax' om snel even een functie te defineren en uit te voeren.
-					De bovestaande Lambda expressie bestaat uit de volgende onderdelen:
+					De bovenstaande Lambda expressie bestaat uit de volgende onderdelen:
 				</p>
 			
 				<ul>
@@ -277,18 +280,18 @@ gefilterd = lijstje.Where(p => p.Lastname == "Smulders").ToList();
 </pre>			
 						
 				<p>
-					De 'Where' functie op de lijst is onderdeel van Linq. Hier gaan we het zo over hebben. Deze vervang voort ons de 'for loop'.
+					De 'Where' functie op de lijst is onderdeel van Linq. Hier gaan we het zo over hebben. Deze vervang voor ons de 'for loop'.
 				</p>
 
 				<p>
-					Onze Lambda statement vervangt in dit voorbeelt de functie "LastnameSmulders". 
-					de p die we meegeven is de naam van de parameter die onze 'anonieme functie' mee krijgt. 
+					Onze Lambda statement vervangt in dit voorbeeld de functie "LastnameSmulders". 
+					De p die we meegeven is de naam van de parameter die onze 'anonieme functie' mee krijgt. 
 					De 'Where' statement roept onze anonieme functie aan met elke keer 1 persoon uit de lijst. 
 					Onze expressie wordt omgezet in een boolean. Je zou dit dus als een 'if' statement kunnen lezen. 
 					Alle personen waarbij deze expressie 'true' is worden verzameld in een nieuwe lijst als return value van de functie Where. 
 				</p>
 				<p>
-					Als je vaker gebruik gaat maken van Lambda expressies, voelt de syntax vanzelf vertrouwt aan. 
+					Als je vaker gebruik gaat maken van Lambda expressies, voelt de syntax vanzelf vertrouwd aan. 
 					Lambda expressies kunnen je een hoop tijd besparen!
 				</p>
 			
