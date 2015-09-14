@@ -66,3 +66,43 @@ body{
 	border-bottom: 1px solid gray;
 	padding:3px;
 }
+
+textarea.proper-sized{
+	width:100%;
+	max-width: 100%;
+	min-width: 100%;
+	margin-bottom: 7px;
+}
+
+.feeling img{
+	max-height:50px;
+	max-width:30%;
+	margin:10px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+
+.feeling img.selected{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+
+.feeling img:hover{
+	cursor:pointer;
+}
+
+.left{
+	float:left;
+}
+
+.modal-header{
+	border-bottom:1px solid lightgray !important;
+	padding:10px !important;
+}
+
+.modal-body p{
+	margin-left:-15px;
+	margin-top:3px;
+}
