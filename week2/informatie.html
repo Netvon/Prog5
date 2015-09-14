@@ -321,47 +321,58 @@ gefilterd = lijstje.Where(p => p.Lastname == "Smulders").ToList();
 					Genoeg gebazel over lambda expressies. Laten we gewoon code gaan tikken!
 				</p>
 				
+				<p>Voor we de nieuwe stijl demonstreren, eerst even een demonstratie hoe we het vroeger deden.</p>
+				
+<!-- coce Snippet -->
+<pre class="prettyprint linenums">
+List<Person> result = new List<Person>();
+foreach (Person person in People)
+{
+  if(person.FirstName[0] == firstChar)
+    result.Add(person);
+}
+return result;
+</pre>
+
+
 				<p>
-					Linq is een assembly (system.linq) waarmee je filter-functies kunt uitvoeren op lijsten. 
-					Deze functies kun je uitvoeren doormiddel van lambda expressies. 
+					Nu gaan we gebruik maken van Linq. Linq is een assembly (system.linq) waarmee je filter-functies kunt uitvoeren op lijsten. 
+					Deze functies kun je uitvoeren doormiddel van een linq query of een lambda expressies. 
 				</p>
 				
 <pre class="prettyprint linenums">
-	using System.Linq;
+using System.Linq;
 </pre>
 	
 				<p>
 					Deze Linq query's maken je leven een stuk makkelijker! Hieronder volgt een lijst van voorbeelden met uitleg. 
 					Deze lijst is niet uitputtend, en ik kan je aanraden om ook even op het wereld wijde web verder te zoeken!
 				</p>
+				
+				
+				<h4>Linq query</h4>
 
+<pre class="prettyprint linenums">
+	
+return from p in People where p.FirstName[0] == firstChar select p;
 
-				<h4>Voorbeelden</h4>
+</pre>
+				<h4>Linq met Lambda</h4>
 <!-- coce Snippet -->
 <pre class="prettyprint linenums">
-  //Filter op eigenschap
-  lijstje.Where(p => p.Lastname == "Smulders");	
-  
-  //Selecteer specifieke property
-  lijstje.Select(p => p.Lastname);
-  
-  //Minimaal 1 en maximaal 1 met firstname 'stijn'
-  lijstje.Single(p => p.Firstname == "Stijn");
-  
-  //Maximaal 1 met firstname 'stijn' 
-  lijstje.SingleOrDefault(p => p.Firstname == "Stijn");
-  
-  //Minstens 1 en daarvan de eerste met firstname 'stijn' 
-  lijstje.SingleOrDefault(p => p.Firstname == "First");
-  
-  //Loopen
-  lijstje.Select(p => WritePersonToConsole(p));
+	
+return People.Where(p => p.FirstName[0] == firstChar);
+
 </pre>
 
-<strong>Let op! </strong>De return value van een linq statement is van het type IEnumerable. Dit is een ander type dan List. Wil je toch een <strong>List</strong> als result? 
+				<strong>Let op! </strong>
+				
+				<p>De return value van een linq statement is van het type IEnumerable. 
+				Dit is een ander type dan List. Wil je toch een <strong>List</strong> als result? 
+				</p>
 
 <pre class="prettyprint linenums">
-	lijstje.Select(p => p.Lastname).toList();
+lijstje.Select(p => p.Lastname).toList();
 </pre>
 			</section>
 			
@@ -451,7 +462,7 @@ gefilterd = lijstje.Where(p => p.Lastname == "Smulders").ToList();
 		
 		<article class="sample shadow-z-1" id="test">
 			<section class="header">
-				<span>Extra: Unit Testing</span>
+				<span>Unit Testing</span>
 			</section>
 			
 			<section class="main">
@@ -558,7 +569,7 @@ gefilterd = lijstje.Where(p => p.Lastname == "Smulders").ToList();
 		
 		<article class="sample shadow-z-1" id="testaaa">
 			<section class="header">
-				<span>Extra: Unit Testing - Triple AAA</span>
+				<span>Unit Testing - Triple AAA</span>
 			</section>
 			<section class="main">
 				

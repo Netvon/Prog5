@@ -8,3 +8,9 @@ C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\bin\Debug\
 C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\bin\Debug\Telefoonboek.pdb
 C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\obj\Debug\Telefoonboek.exe
 C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\obj\Debug\Telefoonboek.pdb
+E:\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\bin\Debug\Telefoonboek.exe.config
+E:\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\bin\Debug\Telefoonboek.exe
+E:\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\bin\Debug\Telefoonboek.pdb
+E:\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\obj\Debug\Telefoonboek.csprojResolveAssemblyReference.cache
+E:\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\obj\Debug\Telefoonboek.exe
+E:\Prog5\Prog5_Opdrachten_Week2\Telefoonboek\obj\Debug\Telefoonboek.pdb
