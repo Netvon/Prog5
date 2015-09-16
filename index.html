@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/roboto.min.css"></link>
 	<link rel="stylesheet" href="bower_components/twentytwenty/twentytwenty.css" />
 	<link rel="stylesheet" href="bower_components/prettify/prettify.css" />
-	<!--<link rel="stylesheet" href="http://localhost:3000/css/style.css" />-->
 	<link rel="stylesheet" href="http://advans.herokuapp.com/css/style.css" />
 	<link rel="stylesheet" href="css/theme.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
@@ -26,8 +25,8 @@
 	<!-- Das pointy pony -->
 	<!-- Change this line to prod before release -->
 
-	<script src="http://advans.herokuapp.com/js/pointypony.js"></script>
-	<!--<script src="http://localhost:3000/js/pointypony.js"></script>-->
+	<!--<script src="http://advans.herokuapp.com/js/pointypony.js"></script>-->
+	<script src="http://localhost:3000/js/pointypony.js"></script>
 
 	
 	<!-- Material design -->
@@ -112,6 +111,8 @@
 			</li>
 		  </ul>
 		  
+		  
+		  
 		
 		  
 		  <ul class="nav navbar-nav navbar-right" ng-show="user">
@@ -124,11 +125,16 @@
 			<li><a class="navbar-brand" ng-click="login()">Login</a></li>
 		  </ul>
 		  
-		  <!--<ul class="nav navbar-nav navbar-right">
-			  <img src="default/img/smile.png">
-		  </ul>-->
+		  <ul class="nav navbar-nav navbar-right">
+			 <li><img src="default/img/smile.png" data-toggle="modal" data-target="#feedback-dialog"></li>
+		  </ul>
       </div>
 	</div>
+	
+	<div id="feedback-dialog" class="modal fade" tabindex="-1"  ng-include="'templates/feedback.html'"></div>
+
+
+
 
 	<div class="row content" >
 		
@@ -169,8 +175,8 @@
 										<li><a ui-sref="week2" ng-click="scrollTo('lambda')">Lambda</a></li>	
 										<li><a ui-sref="week2" ng-click="scrollTo('linq')">Linq</a></li>
 										<li><a ui-sref="week2" ng-click="scrollTo('coding')">Coding Guidelines</a></li>
-										<li><a ui-sref="week2" ng-click="scrollTo('test')">Extra: Unit Test</a></li>
-										<li><a ui-sref="week2" ng-click="scrollTo('testaaa')">Extra: Unit Test - AAA</a></li>		
+										<li><a ui-sref="week2" ng-click="scrollTo('test')">Unit Test</a></li>
+										<li><a ui-sref="week2" ng-click="scrollTo('testaaa')">Unit Test - AAA</a></li>		
 										<li><b><a ui-sref="week2Opdrachten">Opdrachten</a></b></li>
 									</ol>
 								</li>
@@ -247,7 +253,8 @@
 				</article>
 			</div>
 		</div>
-		
+
+
 		<!-- Col MD 6 en Col md 3 reserved for other content -->
 		<div ui-view ></div>
 			

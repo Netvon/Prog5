@@ -81,8 +81,15 @@
 			
 					
 			<section class="main">
+				
+				
+	
+				
 				<img src="week2/img/csharpcity.png" class="photo" />
 				</br>
+				
+				<p><b>Startproject</b>: CSharpCity</p>
+				
 				<p>Welkom in CSharp City. Een stad vol mogelijkheden en valkuilen. 
 				</p>
 				
@@ -130,6 +137,8 @@
 			
 			<section class="main">
 				
+				<p><b>Startproject</b>: Telefoonboek</p>
+				
 				<p>	
 					In deze oefening ga je een eenvoudig telefoonboek maken in .NET. Het doel van deze oefening is te leren omgaan met C# properties en LINQ expressies.
 				</p>
@@ -162,7 +171,105 @@
 			<section class="footer" ng-include="'templates/assignmentFooter.html'"></section>	
 			
 		</article>
+		
+			
+		<article class="sample shadow-z-1 hard" assignment="testing"> 
+			
+			<!-- Custom header -->
 
+			<section class="header" ng-include="'templates/assignmentHeader.html'"></section>	
+
+			
+			<section class="main">
+				
+				<p><b>Startproject</b>: TheRepository.Test</p>
+						
+				<p>
+					Yay! Eindelijk alle code is klaar voor de nieuw gaspedaal app!
+					Zou mijn code 'fout' vrij zijn?
+				</p>
+				
+				<p>
+					De code in het project <b>TheRepository</b> is alvast een voorproefje voor volgende week.
+				 	Als sommige dingen nog niet helemaal duidelijk zijn is dit niet erg. 
+				</p>
+				
+				
+				
+				
+				
+			</section>
+			
+				
+			<section class="easy sub ">
+					<h3>Mijn eerste test</h3>
+					
+				<div class="row">
+					<div class="col-md-8">
+						
+			
+				
+						<p>
+							Schrijf een unit test voor de class <strong>CarVM</strong> om te controleren 
+							of de waarde van de properties <strong>LeaseKostenPerMaand</strong> en <strong>
+							LeaseKostenPerJaar</strong> juist zijn. 
+						</p>
+				
+						<p>Dit is de gewenste berekening: 
+							<ul>
+								<li>LeaseKostenPerMaand = Prijs / Bijtelling * 2</li>
+								<li>LeaseKostenPerJaar = LeaseKostenPerMaand * 12</li>
+							</ul>
+						</p>   		
+
+					</div>
+					
+					<div class="col-md-4 text-center">
+						<img src="week2/img/dontwritetest.gif"  class="photo"/>
+					</div>
+				</div>
+			</section>
+
+			<section class="hard sub">
+			 
+			 	<h2>Dummy Injection</h2>
+    	
+				<div class="row">
+					<div class="col-md-8">
+						<p>
+							Maak een Moq versie van de ICarRepository aan. om dit te doen moet je gebruik moeten maken van het MOQ framework. 
+							Voor meer informatie, lees de Quickstart. 
+						</p>
+						
+						<p>
+							Schrijf een Unit Test voor de class <strong>MainViewModel</strong>. 
+							Test of de berekening achter <strong>TotalePrijs</strong> juist is.  
+							Verifieer de volgende onderdelen:
+						</p>
+						
+						<ul>
+							<li>De totale prijs is gelijk aan de som van prijs van alle <strong>actieve</strong> autos</li>
+							<li>De <strong>GetAll</strong> methode van de <strong>ICarRepository</strong> wordt maar 1x aangeroepen</li>
+						</ul>
+						
+						<p>
+							<i>tip: Lees de <a target="_blank" href="https://github.com/Moq/moq4/wiki/Quickstart">Quickstart</a></i>
+						</p>
+				
+					</div>
+					<div class="col-md-4 text-center">
+						<img src="week2/img/logo.htm" class="img-thumbnail" alt="MOQ">
+					</div>
+				</div>
+			</section>
+
+		
+					
+			<!-- Include default assignment footer -->
+			<section class="footer" ng-include="'templates/assignmentFooter.html'"></section>	
+			
+		</article>
+		
 	</div>
 	<div class="col-md-3">
 		
