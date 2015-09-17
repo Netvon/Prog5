@@ -27,11 +27,11 @@ namespace Telefoonboek.test
             book = (ITelephoneBook) Activator.CreateInstance(bookType);
             IPerson personA = (IPerson)Activator.CreateInstance(personType);
             personA.FirstName = "Bea";
-            personA.LastName = "Knol";
+            personA.LastName = "Knoller";
             personA.TelephoneNumber = "06321312";
             IPerson personB = (IPerson)Activator.CreateInstance(personType);
             personB.FirstName = "Ad";
-            personB.LastName = "Baantjer";
+            personB.LastName = "Baan";
             personB.TelephoneNumber = "064342892";
             IPerson personC = (IPerson)Activator.CreateInstance(personType);
             personC.FirstName = "Celine";
@@ -44,7 +44,7 @@ namespace Telefoonboek.test
         }
 
         [TestMethod]
-        public void Sort_by_last_name()
+        public void Sort_By_Last_Name()
         {
             //1. Arrange
 
@@ -72,16 +72,16 @@ namespace Telefoonboek.test
         }
 
         [TestMethod]
-        public void Last_Name_Longer_Then_5()
+        public void Last_Name_Longer_Than_5()
         {
             //1. Arrange
 
             //2. Act
-            var result = book.LastNameLongerThen(5);
+            var result = book.LastNameLongerThan(5);
 
             //3. Assert
             Assert.AreEqual(2, result.Count);
-            Assert.AreEqual("Ad", result[0].FirstName);
+            Assert.AreEqual("Bea", result[0].FirstName);
             Assert.AreEqual("Celine", result[1].FirstName);
         }
 
@@ -95,8 +95,8 @@ namespace Telefoonboek.test
 
             //3. Assert
             Assert.AreEqual(3, result.Count);
-            Assert.AreEqual("Bea", result[0].FirstName);
-            Assert.AreEqual("Ad", result[1].FirstName);
+            Assert.AreEqual("Ad", result[0].FirstName);
+            Assert.AreEqual("Bea", result[1].FirstName);
             Assert.AreEqual("Celine", result[2].FirstName);
         }
 

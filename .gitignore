@@ -1,1 +1,8 @@
 /node_modules/
+TestResults
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
