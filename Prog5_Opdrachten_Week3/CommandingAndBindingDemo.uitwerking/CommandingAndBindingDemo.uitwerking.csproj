@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDAD1FAF-680D-4CEB-9318-B6579C33B5DD}</ProjectGuid>
+    <ProjectGuid>{D0649214-D374-4AC8-B8E0-4472B520B98C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CommandingAndBindingDemo</RootNamespace>
@@ -54,6 +54,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DegreesToAngleConverter.cs" />
+    <Compile Include="DegreesToFahrenheitConverter.cs" />
+    <Compile Include="SetHighCommand.cs" />
     <Compile Include="SetLowCommand.cs" />
     <Compile Include="TemperatureVM.cs" />
     <Page Include="MainWindow.xaml">
