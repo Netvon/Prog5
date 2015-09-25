@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CommandingAndBindingDemo
+namespace MusicCollectionMVVM
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,7 +23,6 @@ namespace CommandingAndBindingDemo
         public MainWindow()
         {
             InitializeComponent();
-
         }
     }
 }
