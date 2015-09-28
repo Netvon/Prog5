@@ -1,32 +1,31 @@
-﻿using MusicCollectionMVVMLight.Model;
+﻿using GalaSoft.MvvmLight;
+using MusicCollectionMVVMLight.Model;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace MusicCollectionMVVMMVVMLight.Model
 {
-    public class SongViewModel : INotifyPropertyChanged
+    public class SongViewModel : ViewModelBase
     {
         public int Id
         {
             get { return _song.Id; }
-            set { _song.Id = value; OnPropertyChanged(); }
+            set { _song.Id = value; RaisePropertyChanged("Id"); }
         }
 
 
         public string Artist
         {
             get { return _song.Artist; }
-            set { _song.Artist = value; OnPropertyChanged(); }
+            set { _song.Artist = value; RaisePropertyChanged("Artist"); }
         }
 
 
         public string Title
         {
             get { return _song.Title; }
-            set { _song.Title = value; OnPropertyChanged(); }
+            set { _song.Title = value; RaisePropertyChanged("Title"); }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         private Song _song;
 
@@ -38,14 +37,6 @@ namespace MusicCollectionMVVMMVVMLight.Model
         public SongViewModel(Song song)
         {
             this._song = song;
-        }
-
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
         }
     }
 }
