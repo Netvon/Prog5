@@ -28,6 +28,95 @@
 		<div class="row">
 			<div class="col-md-6">
 				
+				<article class="sample shadow-z-1 full-height">
+					<section class="header">
+						<span>Help mee!</span>
+					</section>
+					
+					<section class="main">
+						Als docent doe ik mijn best om de hoogste kwaliteit aan lesstof op te leveren. Dit gaat helaas niet altijd. 
+						Daarom hebben studenten nu de mogelijkheid om actief mee te bouwen aan de lesstof van dit vak. 
+						<a ui-sref="pullrequest">Lees meer.</a>
+						
+					</section>
+					
+					<section class="footer">
+						
+					</section>
+					
+				</article>
+				
+			</div>
+			<div class="col-md-6">
+				
+				<article class="sample shadow-z-1 full-height">
+					<section class="header">
+						<span>Avans punten!</span>
+					</section>
+					
+					<section class="main">
+						Punten verdienen gaat op de volgende manieren. 
+						<ol>
+							<li>Opdrachten laten afvinken</li>
+							<li>Webdictaat verbeteren door Pull request</li>
+							<li>Omkopen vakdocent</li>
+						</ol>
+					</section>
+					
+					<section class="footer">
+						
+					</section>
+					
+				</article>
+				
+			</div>
+		</div>
+		
+			
+		<article class="sample shadow-z-1" ng-controller="leaderboardCtrl">
+			<section class="header">
+				<span>Leaderboards</span>
+			</section>
+		
+			<section class="main">
+				<table class="leaderboard">
+					<thead>
+						<tr>
+							<td>#</td>
+							<td>Naam</td>
+							<td>Avans punten</td>
+							
+						</tr>
+					
+					</thead>
+					<tbody>
+						
+						<tr ng-repeat="user in users">
+							<td>{{$index + 1}}</td>
+							<td>{{user.name}}</td>
+							<td>{{user.points}}</td>
+						</tr>
+						
+						<tr ng-show="consolation" class="consolation">
+							<td> :( </td>
+							<td>{{consolation.name}}</td>
+							<td>{{consolation.points}}</td>
+						</tr>
+				
+					</tbody>
+				</table>
+			</section>
+			
+			<section class="footer">
+
+				
+			</section>
+		
+		</article>
+		
+		<div class="row">
+			<div class="col-md-6">
+				
 				<article class="sample shadow-z-1">
 					<section class="header">
 						<span>{{course.name}}</span>
@@ -67,42 +156,6 @@
 				
 			</div>
 		</div>
-		
-			
-		<article class="sample shadow-z-1" ng-controller="leaderboardCtrl">
-			<section class="header">
-				<span>Leaderboards</span>
-			</section>
-		
-			<section class="main">
-				<table class="leaderboard">
-					<thead>
-						<tr>
-							<td>#</td>
-							<td>Naam</td>
-							<td>Avans punten</td>
-							
-						</tr>
-					
-					</thead>
-					<tbody>
-						
-						<tr ng-repeat="user in users">
-							<td>{{$index + 1}}</td>
-							<td>{{user.name}}</td>
-							<td>{{user.points}}</td>
-						</tr>
-				
-					</tbody>
-				</table>
-			</section>
-			
-			<section class="footer">
-
-				
-			</section>
-		
-		</article>
 		
 	</div>
 	<div class="col-md-3"></div>

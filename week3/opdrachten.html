@@ -53,12 +53,7 @@
 
 					</br>
 				
-
-				<p>
-					Daarnaast bevat elke opdracht, ook een <b>Unit test</b> project en een aantal <b>interface</b> objecten. 
-					Gebruik deze interfaces om je eigen objecten te immplementeren, en run de tests om te controlleren of de opdracht goed is.
-				</p>	
-			
+  				<p>Voor alle opdrachten geldt dat het gebruik van de Toolbox en GUI wizards niet is toegestaan. Alle opdrachten moeten rechtstreeks in XAML gebouwd worden. </p>
 				
 				<p>
 				De workshop opdrachten zijn tevens huiswerk opdrachten. Deze opdrachten zijn oefenmateriaal voor het assessment aan het einde van dit blok. 
@@ -205,6 +200,95 @@
 			<section class="footer" ng-include="'templates/assignmentFooter.html'"></section>	
 			
 		</article>
+		
+		
+		<article class="sample shadow-z-1 hard" assignment="currency"> 
+			
+			<!-- Include default assignment header -->
+			<section class="header" ng-include="'templates/assignmentHeader.html'"></section>	
+
+			<section class="main">
+				<p>
+				Deze workshop opdrachten is er geen start project. Voor de eerste keer moet je een WPF applicatie van de grond af opbouwen!
+				Success!
+				</p>
+			</section>
+			
+				
+			<section class="easy sub ">
+				<h3>My First WPF</h3>
+
+				Bouw een WPF applicatie waar de waarde van een bedrag op een model getoond wordt in euro's. 
+				Gebruik hiervoor de data-binding technieken die je in de les geleerd hebt. 
+				De volgende eisen en technieken zijn verplicht:
+				<ul>
+					<li>XAML Textbox voor het wijzigen van het bedrag</li>
+					<li>Data-Binding</li>
+					<li>Een XAML container om de layout netjes te houden</li>
+					<li>Overzichtelijke XAML</li>
+				</ul>
+
+			</section>
+
+			<section class="medium sub">
+				<h3>Currency Calculator</h3>
+				<div class="row">
+
+						<div class="col-md-8">
+						
+							<p>
+								We gaan onze eerste opdracht uitbreiden met een tweede TextBox veld.
+								Dit veld toont het bedrag in Dollar (of een andere vorm van Currency). 
+								Als de gebruiker het bedrag in dollars aanpast moet de waarde van het bedrag in euro's automatisch mee veranderen (en visa versa).
+							</p>
+					
+							<p>
+								<i>Tip: Gebruik de mogelijkheden van de class <strong>ValueConverter</strong></i>
+							</p>
+					
+							<p>
+								Link voor currency: <a target="_blank" href="http://www.x-rates.com/calculator/">http://www.x-rates.com/calculator/</a>
+							</p>
+					
+					
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="week3/img/currency.jpg" />
+						</div>
+				</div>
+			</section>
+
+			<section class="hard sub">
+				<h3>"Tijd voor Creativiteit" - Fresku</h3>
+				<div class="row">	
+					<div class="col-md-8">
+						<p>
+							Onze currency calculator is nu bijna klaar. Maar naar getallen staren is zo saai! <strong>:( </strong> 
+							Ik zou graag een visuele implementatie zien van het verschil in currency.
+							Maak een visuele implementatie van de waarde van het bedrag in Euros of Dollars. 
+							Denk hierbij bijvoorbeeld aan een stapel muntjes of een grafiekje. Je mag natuurlijk ook zelf een visuele implementatie bedenken.
+						</p>
+					</div>    
+					<div class="col-md-4 text-center">
+						<img src="week3/img/coins.jpg" />
+					</div>
+				</div>
+			</section>
+			
+					
+			<!-- Include default assignment footer -->
+			<section class="footer" ng-include="'templates/assignmentFooter.html'"></section>	
+			
+		</article>
+		
+		
+
+
+		
+		
+		<!-- einde huiswerk -->
+		
+		
 	</div>
 	<div class="col-md-3">
 		

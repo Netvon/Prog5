@@ -6,6 +6,9 @@ module.exports = function($stateProvider, $urlRouterProvider) {
         
         .state('home', { url: '/home?section',  templateUrl:'default/home.html' })
         .state('profile', { url: '/profile',  templateUrl:'default/profile.html' })
+        .state('leaderboards', { url: '/leaderboards',  templateUrl:'default/leaderboards.html' })
+        .state('pullrequest', { url: '/pullrequest',  templateUrl:'default/pullrequest.html' })
+        .state('punten', { url: '/Avanspunten',  templateUrl:'default/Avanspunten.html' })
                 
         .state('week1', { url: '/week1?section',  templateUrl:'week1/informatie.html' })
         .state('week1Opdrachten', { url: '/week1/opdrachten',  templateUrl:'week1/opdrachten.html' })
@@ -25,5 +28,7 @@ module.exports = function($stateProvider, $urlRouterProvider) {
         
         .state('week6', { url: '/week6',  templateUrl:'week6/informatie.html' })
         .state('week6Opdrachten', { url: '/week6/opdrachten',  templateUrl:'week6/opdrachten.html' });
+        
+        
 
 };

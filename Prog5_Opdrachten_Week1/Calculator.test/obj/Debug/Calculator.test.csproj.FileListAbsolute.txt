@@ -1,7 +1,0 @@
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\bin\Debug\Calculator.test.dll
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\bin\Debug\Calculator.test.pdb
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\bin\Debug\Calculator.exe
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\bin\Debug\Calculator.pdb
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\obj\Debug\Calculator.test.csprojResolveAssemblyReference.cache
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\obj\Debug\Calculator.test.dll
-C:\Users\ssmulder\Documents\Prog5\Prog5_Opdrachten_Week1\Calculator.test\obj\Debug\Calculator.test.pdb
