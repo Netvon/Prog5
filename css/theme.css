@@ -89,6 +89,8 @@ a:hover{
 	border-right:6px solid white;
 	border-left:6px solid white;
 	border-bottom:12px solid white;
+	margin-top:8px;
+	margin-bottom:8px;
 }
 
 .content article img.right{
@@ -285,4 +287,22 @@ span.hard{
 .form-control{
 	background-image: linear-gradient(#495bc0,#495bc0),linear-gradient(#d2d2d2,#d2d2d2);
 	border-color:#495bc0 !important;
+}
+
+.split div:first-child{
+	border-right:1px solid lightgray;		
+}
+
+
+img.responsive{
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+@media screen and (max-width: 480px) {
+    img.responsive {
+       max-width:70%;
+    }
 }
